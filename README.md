@@ -32,20 +32,6 @@ This application is a strategic game that simulates a real-world data processing
 -   [Docker](https://docs.docker.com/get-docker/)
 -   [Docker Compose](https://docs.docker.com/compose/install/)
 
-### Directory Structure
-
-This `README.md` should be in a parent directory that contains the two project folders, like so:
-
-```
-parent-directory/
-├── README.md
-├── docker-compose.yml
-├── go-projects/
-│   └── tower-defence-engine/
-└── vue-projects/
-    └── tower-defence-ui/
-```
-
 ### One-Command Deployment
 
 With Docker running, navigate to the parent directory containing the `docker-compose.yml` file and run a single command:
