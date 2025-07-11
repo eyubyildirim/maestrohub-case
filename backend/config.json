@@ -1,0 +1,36 @@
+{
+    "rates": {
+        "spawnRateMs": 3000,
+        "individualWeaponRateMs": 500,
+        "groupWeaponRateMs": 1000,
+        "ttlCheckRateMs": 200
+    },
+    "timing": {
+        "battlefieldTtlSec": 20.0,
+        "transitTtlSec": 15.0
+    },
+    "scoring": {
+        "points": {
+            "soldier": 10,
+            "tank": 50,
+            "helicopter": 100
+        },
+        "penalties": {
+            "escape": 200,
+            "breach": 500
+        }
+    },
+    "units": {
+        "hitpoints": {
+            "soldier": 20,
+            "tank": 80,
+            "helicopter": 150
+        }
+    },
+    "weapons": {
+        "processingPower": {
+            "individual": 10,
+            "group": 25
+        }
+    }
+}

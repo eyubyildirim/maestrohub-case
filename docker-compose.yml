@@ -1,0 +1,30 @@
+services:
+  # The Backend Service (Go Engine)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: tower-defence-backend
+    ports:
+      - "8080:8080" # Map host port 8080 to container port 8080
+    restart: unless-stopped
+    networks:
+      - tower-defence-net
+
+  # The Frontend Service (Vue UI)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: tower-defence-frontend
+    ports:
+      - "5173:80" # Map host port 5173 to the container's Nginx port 80
+    depends_on:
+      - backend # Ensures the backend starts before the frontend
+    restart: unless-stopped
+    networks:
+      - tower-defence-net
+
+networks:
+  tower-defence-net:
+    driver: bridge
