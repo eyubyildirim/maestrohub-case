@@ -51,7 +51,7 @@ Once the build is complete and the containers are running, access the applicatio
 
 ### Stopping the System
 
-To stop all running containers, press `Ctrl+C` in the terminal where `docker-compose up` is running. To remove the containers completely, run:
+To stop all running containers, press `Ctrl+C` in the terminal where `docker compose up` is running. To remove the containers completely, run:
 
 ```bash
 dockercompose down
