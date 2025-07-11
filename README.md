@@ -37,7 +37,7 @@ This application is a strategic game that simulates a real-world data processing
 With Docker running, navigate to the parent directory containing the `docker-compose.yml` file and run a single command:
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 -   This command will build the Docker images for both the backend and frontend services.
@@ -54,7 +54,7 @@ Once the build is complete and the containers are running, access the applicatio
 To stop all running containers, press `Ctrl+C` in the terminal where `docker-compose up` is running. To remove the containers completely, run:
 
 ```bash
-docker-compose down
+dockercompose down
 ```
 
 ---
@@ -69,7 +69,7 @@ You can adjust parameters such as unit spawn rates, weapon firing speeds, unit h
 
 ```bash
 # To apply config changes, restart the containers
-docker-compose up --build -d
+docker compose up --build -d
 ```
 *(The `-d` flag runs the containers in detached mode.)*
 
